@@ -1,6 +1,6 @@
-require("dotenv").config({
-  path: `.env`
-});
+// require("dotenv").config({
+//   path: `.env`
+// });
 
 module.exports = {
   siteMetadata: {
@@ -24,7 +24,7 @@ module.exports = {
         //For sites self hosted and other options check:
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
         baseUrl: "blog-balance-ton-quoi",
-        protocol: "https",
+        protocol: "http",
         hostingWPCOM: false,
         useACF: true,
         // auth: {
