@@ -51,8 +51,8 @@ module.exports = {
           //And add there your clientId, clientSecret, WordPressUser and WordPressPassword
           //More info about environment variables: https://www.gatsbyjs.org/docs/environment-variables
           //More info about communicate with wordpress.com API: https://developer.wordpress.com/apps/
-          wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
-          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
+          // wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
+          // wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
           wpcom_user: process.env.WORDPRESS_USER,
           wpcom_pass: process.env.WORDPRESS_PASSWORD
         },
