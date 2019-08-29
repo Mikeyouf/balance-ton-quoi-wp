@@ -27,10 +27,10 @@ module.exports = {
         protocol: process.env.API_PROTOCOL,
         hostingWPCOM: false,
         useACF: true,
-        // searchAndReplaceContentUrls: {
-        //   sourceUrl: "https://source-url.com",
-        //   replacementUrl: "https://replacement-url.com",
-        // },
+        searchAndReplaceContentUrls: {
+          sourceUrl: "http://blog-balance-ton-quoi",
+          replacementUrl: "https://blog-balance-ton-quoi.netlify.com",
+        },
         includedRoutes: [
           "**/categories",
           "**/posts",
