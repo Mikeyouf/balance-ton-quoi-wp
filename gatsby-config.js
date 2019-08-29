@@ -1,6 +1,6 @@
-// require("dotenv").config({
-//   path: `.env`
-// });
+require("dotenv").config({
+  path: `.env`
+});
 
 module.exports = {
   siteMetadata: {
@@ -23,20 +23,40 @@ module.exports = {
         //Default options are for WP sites hosted on wordpress.com
         //For sites self hosted and other options check:
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
-        baseUrl: "blog-balance-ton-quoi",
+        baseUrl: process.env.API_URL,
+        protocol: process.env.API_PROTOCOL,
         protocol: "http",
         hostingWPCOM: false,
         useACF: true,
-        // auth: {
-        //   //Create a file named .env in root folder of your project
-        //   //And add there your clientId, clientSecret, WordPressUser and WordPressPassword
-        //   //More info about environment variables: https://www.gatsbyjs.org/docs/environment-variables
-        //   //More info about communicate with wordpress.com API: https://developer.wordpress.com/apps/
-        //   wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
-        //   wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
-        //   wpcom_user: process.env.WORDPRESS_USER,
-        //   wpcom_pass: process.env.WORDPRESS_PASSWORD
-        // },
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://source-url.com",
+          replacementUrl: "https://replacement-url.com",
+        },
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+          "**/*/*/menus",
+          "**/*/*/menu-locations",
+        ],
+        excludedRoutes: [],
+        normalizer: function({ entities }) {
+          return entities
+        },
+        auth: {
+          //Create a file named .env in root folder of your project
+          //And add there your clientId, clientSecret, WordPressUser and WordPressPassword
+          //More info about environment variables: https://www.gatsbyjs.org/docs/environment-variables
+          //More info about communicate with wordpress.com API: https://developer.wordpress.com/apps/
+          wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
+          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
+          wpcom_user: process.env.WORDPRESS_USER,
+          wpcom_pass: process.env.WORDPRESS_PASSWORD
+        },
         // searchAndReplaceContentUrls: {
         //   //Nested urls won't work. If you find a solution, please fill a PR request
         //   sourceUrl: "http://blog-balance-ton-quoi",
