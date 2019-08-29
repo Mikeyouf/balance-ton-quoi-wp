@@ -8,7 +8,7 @@ const Footer = () => (
         <a href="https://www.pablovila.com">Pablo Vila</a>
       </p>
       <p>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Built with love
         {` `}
         <a href="https://www.gatsbyjs.org">Mik@el</a>
       </p>
