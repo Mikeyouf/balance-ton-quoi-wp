@@ -25,13 +25,12 @@ module.exports = {
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
         baseUrl: process.env.API_URL,
         protocol: process.env.API_PROTOCOL,
-        protocol: "http",
         hostingWPCOM: false,
         useACF: true,
-        searchAndReplaceContentUrls: {
-          sourceUrl: "https://source-url.com",
-          replacementUrl: "https://replacement-url.com",
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "https://source-url.com",
+        //   replacementUrl: "https://replacement-url.com",
+        // },
         includedRoutes: [
           "**/categories",
           "**/posts",
