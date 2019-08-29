@@ -24,6 +24,7 @@
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-source-wordpress": "^3.0.37",
     "gatsby-transformer-sharp": "^2.1.13",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.1",
     "react": "^16.8.0",
@@ -43,12 +44,13 @@
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "homepage": "https://github.com/pablovila/gatsby-starter-wordpress-community",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pablovila/gatsby-starter-wordpress-community"
+    "url": "https://github.com/Mikeyouf/balance-ton-quoi-wp"
   },
   "bugs": {
     "url": "https://github.com/pablovila/gatsby-starter-wordpress-communityissues"
