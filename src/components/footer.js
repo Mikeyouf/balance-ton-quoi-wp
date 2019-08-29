@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="content has-text-centered">
       <p>
-        <strong>Gatsby Starter WordPress Community</strong> by{" "}
+        <strong>Gatsby Starter WordPress</strong> by{" "}
         <a href="https://www.pablovila.com">Pablo Vila</a>
       </p>
       <p>
