@@ -42,6 +42,7 @@
     "start": "npm run develop",
     "clean": "rimraf .cache public",
     "build": "npm run clean && gatsby build",
+    "folderbuild":"gatsby build --prefix-paths",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
