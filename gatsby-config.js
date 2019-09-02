@@ -24,8 +24,8 @@ module.exports = {
         //Default options are for WP sites hosted on wordpress.com
         //For sites self hosted and other options check:
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
-        baseUrl: process.env.API_URL,
-        protocol: process.env.API_PROTOCOL,
+        baseUrl: "blog-balance-ton-quoi",
+        protocol: "http",
         hostingWPCOM: false,
         useACF: true,
         searchAndReplaceContentUrls: {
