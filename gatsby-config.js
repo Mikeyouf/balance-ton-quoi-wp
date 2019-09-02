@@ -30,7 +30,7 @@ module.exports = {
         useACF: true,
         searchAndReplaceContentUrls: {
           sourceUrl: "http://blog-balance-ton-quoi",
-          replacementUrl: "",
+          replacementUrl: "https://blog-balance-ton-quoi.netlify.com",
         },
         includedRoutes: [
           "**/categories",
