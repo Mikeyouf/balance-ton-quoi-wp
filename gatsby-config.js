@@ -3,7 +3,7 @@ require("dotenv").config({
 });
 
 module.exports = {
-  pathPrefix: `/balance-ton-quoi-wp/`,
+  pathPrefix: `/balance-ton-quoi-wp`,
   siteMetadata: {
     title: `Blog balance ton quoi`,
     description: `Kick off a great Gatsby blog with this starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -28,10 +28,10 @@ module.exports = {
         protocol: process.env.API_PROTOCOL,
         hostingWPCOM: false,
         useACF: true,
-        // searchAndReplaceContentUrls: {
-        //   sourceUrl: "http://blog-balance-ton-quoi",
-        //   replacementUrl: "https://blog-balance-ton-quoi.netlify.com",
-        // },
+        searchAndReplaceContentUrls: {
+          sourceUrl: "http://blog-balance-ton-quoi",
+          replacementUrl: "",
+        },
         includedRoutes: [
           "**/categories",
           "**/posts",
