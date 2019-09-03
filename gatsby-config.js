@@ -32,6 +32,7 @@ module.exports = {
           sourceUrl: "http://blog-balance-ton-quoi",
           replacementUrl: "https://blog-balance-ton-quoi.netlify.com",
         },
+        verboseOutput: true,
         includedRoutes: [
           "**/categories",
           "**/posts",
