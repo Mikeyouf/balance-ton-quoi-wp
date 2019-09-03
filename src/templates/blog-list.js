@@ -56,7 +56,7 @@ const BlogIndex = props => {
             key={post.node.wordpress_id}
             title={post.node.title}
             excerpt={post.node.excerpt}
-            media={post.node.featured_media}
+            media={post.node.featured_media ? post.node.featured_media : null}
             slug={post.node.slug}
             index={index}
           />

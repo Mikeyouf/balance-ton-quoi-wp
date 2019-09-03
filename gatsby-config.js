@@ -47,16 +47,16 @@ module.exports = {
         normalizer: function({ entities }) {
           return entities
         },
-        auth: {
-          //Create a file named .env in root folder of your project
-          //And add there your clientId, clientSecret, WordPressUser and WordPressPassword
-          //More info about environment variables: https://www.gatsbyjs.org/docs/environment-variables
-          //More info about communicate with wordpress.com API: https://developer.wordpress.com/apps/
-          // wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
-          // wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
-          wpcom_user: process.env.WORDPRESS_USER,
-          wpcom_pass: process.env.WORDPRESS_PASSWORD
-        },
+        // auth: {
+        //   //Create a file named .env in root folder of your project
+        //   //And add there your clientId, clientSecret, WordPressUser and WordPressPassword
+        //   //More info about environment variables: https://www.gatsbyjs.org/docs/environment-variables
+        //   //More info about communicate with wordpress.com API: https://developer.wordpress.com/apps/
+        //   // wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
+        //   // wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
+        //   // wpcom_user: process.env.WORDPRESS_USER,
+        //   // wpcom_pass: process.env.WORDPRESS_PASSWORD
+        // },
         // searchAndReplaceContentUrls: {
         //   //Nested urls won't work. If you find a solution, please fill a PR request
         //   sourceUrl: "http://blog-balance-ton-quoi",
