@@ -24,14 +24,14 @@ module.exports = {
         //Default options are for WP sites hosted on wordpress.com
         //For sites self hosted and other options check:
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
-        baseUrl: "blog-balance-ton-quoi",
+        baseUrl: "www.balance-ton-quoi.yj.fr",
         protocol: "http",
         hostingWPCOM: false,
         useACF: true,
-        searchAndReplaceContentUrls: {
-          sourceUrl: "http://blog-balance-ton-quoi",
-          replacementUrl: "https://blog-balance-ton-quoi.netlify.com",
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "http://blog-balance-ton-quoi",
+        //   replacementUrl: "https://blog-balance-ton-quoi.netlify.com",
+        // },
         verboseOutput: true,
         includedRoutes: [
           "**/categories",
