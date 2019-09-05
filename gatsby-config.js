@@ -25,7 +25,7 @@ module.exports = {
         //For sites self hosted and other options check:
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
         baseUrl: "www.balance-ton-quoi.yj.fr",
-        protocol: "http",
+        protocol: "https",
         hostingWPCOM: false,
         useACF: true,
         // searchAndReplaceContentUrls: {
