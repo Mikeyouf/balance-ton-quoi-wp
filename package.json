@@ -22,7 +22,7 @@
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.20",
     "gatsby-source-filesystem": "^2.0.21",
-    "gatsby-source-wordpress": "^3.0.37",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-sharp": "^2.1.13",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.11.0",
